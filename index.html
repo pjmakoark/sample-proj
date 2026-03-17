@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Button Prompt</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
+    <button id="alertButton">Click Me</button>
+
+    <script>
+        const button = document.getElementById('alertButton');
+
+        button.addEventListener('click', () => {
+            alert('Hello!');
+        });
+    </script>
     <header>
         <h1>Hello Button</h1>
     </header>
@@ -20,6 +46,6 @@
         <p>&copy; 2026 Sample Proj</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
+
 </html>
